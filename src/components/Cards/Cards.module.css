@@ -1,0 +1,7 @@
+.CardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 0 auto;
+    
+}

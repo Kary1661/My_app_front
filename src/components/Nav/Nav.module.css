@@ -1,0 +1,32 @@
+.nav{
+    width: full;
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+}
+
+.btnAb{
+    color: #fc0303;
+    margin: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btnFav{
+    color:#02ff20;
+    margin: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.btnHome{
+    color:#fd01dc;
+    margin: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none; 
+}

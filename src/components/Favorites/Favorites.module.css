@@ -1,0 +1,24 @@
+.imageContainer {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.btnDelete{
+    margin: 5px;
+    display: inline-flex;
+    padding-right: 3%;
+    align-items: center;
+    justify-content: center;
+}
+.favContainer{
+    display:inline-table;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-left: 50px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: paleturquoise;
+}  
+/* agregar espacio entre las cartas: flex-wrap: wrap; inline-table acomoda al lado y abajo  */

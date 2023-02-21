@@ -1,0 +1,32 @@
+
+.imageContainer {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.cardId{
+    font-size: 26px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: start;
+    color: #00fffb;
+}
+.cardContainer {
+    margin-bottom: 30px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 3px solid chartreuse;
+    background-image: url(../assets/stars.jpg);
+}    
+.btnDelete{
+    margin: 6px;
+    display: inline-flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border-radius: 15px;
+    padding-top: 5px;
+    justify-content: center;
+    width: 96px;
+    height: 30px;
+    border: 3px solid rgb(255, 0, 115);
+}
