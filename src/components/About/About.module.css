@@ -1,8 +1,9 @@
 .AboutContainer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgba(54, 254, 9, 0.608);
-    font-size: 22px;
-    font-weight: bold;
+    color: #fd028c;
+    font-size: 20px;
     text-align: center;
-    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
 }
