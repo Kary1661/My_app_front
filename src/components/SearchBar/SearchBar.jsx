@@ -1,8 +1,7 @@
 import { useState } from "react";
 import style from "./SearchBar.module.css";
 
-function SearchBar(props) {
-  const { onSearch } = props;
+function SearchBar({ onSearch }) {
   const [character, setCharacter] = useState();
 
   const handleChange = (event) => {
@@ -25,19 +24,18 @@ function SearchBar(props) {
 
   return (
     <>
-      <input
+      <input 
         type="search"
         placeholder="Search character"
-        className={style.inpt}
         onChange={handleChange}
-        value={character}
-      ></input>
-      <button onClick={() => onSearch(character)} className={style.btnAdd}>
-        Add
-      </button>
-      
-    </>
-  );
+        value={character} 
+        className={style.inpt}/>
+        <button 
+        onClick={() => onSearch(character)} 
+        className={style.btnAdd}>
+        Add</button>
+      </>
+  )
 }
 
 export default SearchBar;

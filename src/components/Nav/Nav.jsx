@@ -12,7 +12,7 @@ function Nav(props) {
 
   return (
     <div className={style.nav}>
-      <div className={style.containLetter} onClick={handleClick}></div>
+      <button onClick={handleClick}/>
       <div>
         <Link to="/home" className={style.btnHome}>Home</Link>
         <Link to="/about" className={style.btnAb}>

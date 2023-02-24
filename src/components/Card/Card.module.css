@@ -1,32 +1,65 @@
 
 .imageContainer {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 15px;
 }
 .cardId{
     font-size: 26px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
-    text-align: start;
+    text-align: left;
     color: #00fffb;
+    text-decoration: none;
 }
 .cardContainer {
-    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 105%;
+    width: 100%;
     border-radius: 15px;
-    font-weight: bold;
-    font-size: 20px;
     border: 3px solid chartreuse;
     background-image: url(../assets/stars.jpg);
+    text-decoration: none;
+    padding: 5px;
 }    
 .btnDelete{
-    margin: 6px;
     display: inline-flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
     font-weight: bold;
+    font-size: 16px;
+    color:azure;
+    background-color: rgb(210, 124, 253);
     border-radius: 15px;
-    padding-top: 5px;
     justify-content: center;
-    width: 96px;
+    width: 60px;
     height: 30px;
-    border: 3px solid rgb(255, 0, 115);
+    border: 5px solid rgb(255, 0, 115);
+    margin-left: 10px;
+}
+.btnDetail{
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: rgb(210, 124, 253);
+    color: azure;
+    border-radius: 15px;
+    justify-content: center;
+    width: 50px;
+    height: 52px;
+    border: 5px solid rgb(255, 0, 115);
+    margin: 10px;
+    gap: 30px;
+}
+.btnFav{
+    display: flex;
+    background-color: rgb(210, 124, 253);
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    margin-left: 115px;
+    margin-top: 20px;
+    width: 40px;
+    height: 26px;
+    color: darkmagenta;
+    border: px solid rgb(255, 0, 115);
 }

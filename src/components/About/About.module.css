@@ -1,9 +1,16 @@
-.AboutContainer {
+.aboutContainer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #fd028c;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 60px;
+    color: #b95a8f;
+    background-image: url(/src/components/assets/Night.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    width: 190%;
+    font-size: 24px;
+    padding: 7%;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 15%;
 }

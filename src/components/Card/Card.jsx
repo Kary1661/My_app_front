@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useState, useEffect } from "react";
 import { addFavorite, deleteFavorite } from "../Redux/actions";
 
+
 function Card({ name, species, gender, image, onClose, detailId }) {
   const dispatch = useDispatch();
   const myFavorites = useSelector((state) => state.myFavorites);
@@ -33,24 +34,24 @@ function Card({ name, species, gender, image, onClose, detailId }) {
 
   return (
     <div className={style.cardContainer}>
-      <div className={style.contAll}>
         <h1 className={style.cardId}>Name: {name}</h1>
         <h1 className={style.cardId}>Specie: {species}</h1>
         <img src={image} alt={name} className={style.imageContainer} />
-        <div>
-          <button className={style.btnDelete} onClick={onClose}>Close</button>
-          <Link to={`/detail/${detailId}`}>
-            <button className={style.btnDelete}>View More</button>
-          </Link>
-        </div>
+          <div>
+            <button className={style.btnDelete} onClick={onClose}>Close</button>
+            <Link to={`/detail/${detailId}`} className={style.btnDetail}>
+            <button type="button" className={style.btnDetail}>
+              View More
+            </button>
+            </Link>
+          </div>
         {
           isFav ? (
-           <button onClick={handleFavorite}>❤️</button>
+           <button className={style.btnFav} onClick={handleFavorite}>❤️</button>
            ) : (
-           <button onClick={handleFavorite}>🤍</button>
+           <button className={style.btnFav} onClick={handleFavorite}>🤍</button>
         )
       }
-      </div>
     </div>
   );
 }
