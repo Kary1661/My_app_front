@@ -3,7 +3,7 @@ import style from "./Cards.module.css";
 
 function Cards({ characters, onClose }) {
   return (
-    <div className={style.CardContainer}>
+    <div className={style.cardContainer}>
       {characters.map((character) => {
         return (
           <Card

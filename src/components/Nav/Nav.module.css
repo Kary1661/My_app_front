@@ -1,31 +1,51 @@
-.nav{
-    width: 100%;
-    height: 100px;
+.containerNav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 8%;
+    width: 208%;
+    background-image: url(/src/components/assets/tipo-rick-y-morty.jpg);
+    background-size: 420px;
+    background-position: center;
+    background-repeat: repeat;
+    height: 17vh;
+    margin-left: 6%;
+    margin-bottom: 5%;
 }
 
 .btnAb{
-    color: #ff6f6f;
+    color: #ffffff;
     margin: 12px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 4px solid rgb(255, 124, 183);
+    box-shadow: 0 7px 4px #494a4a;
 }
 
 .btnFav{
-    color:#6efd7f;
+    color: #ffffff;
     margin: 12px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 4px solid rgb(255, 124, 183);
+    box-shadow: 0 7px 4px #494a4a;
 }
 .btnHome{
-    color:#fb8fec;
+    color: #ffffff;
     margin: 12px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
-    text-decoration: none; 
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 4px solid rgb(255, 124, 183);
+    box-shadow: 0 7px 4px #494a4a;
 }

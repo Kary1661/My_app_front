@@ -1,4 +1,4 @@
-.CardContainer {
+.cardContainer {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 100px;

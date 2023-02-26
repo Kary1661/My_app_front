@@ -23,7 +23,7 @@ function SearchBar({ onSearch }) {
   
 
   return (
-    <>
+    <div>
       <input 
         type="search"
         placeholder="Search character"
@@ -34,7 +34,7 @@ function SearchBar({ onSearch }) {
         onClick={() => onSearch(character)} 
         className={style.btnAdd}>
         Add</button>
-      </>
+    </div>
   )
 }
 

@@ -11,9 +11,10 @@ function Nav(props) {
   };
 
   return (
-    <div className={style.nav}>
+    <div>
       <button onClick={handleClick}/>
-      <div>
+      <div className={style.containerNav}>
+        <SearchBar onSearch={onSearch} />
         <Link to="/home" className={style.btnHome}>Home</Link>
         <Link to="/about" className={style.btnAb}>
           About
@@ -21,7 +22,6 @@ function Nav(props) {
         <Link to="/favorites" className={style.btnFav}>
           Favorites
         </Link>
-        <SearchBar onSearch={onSearch} />
       </div>
     </div>
   );

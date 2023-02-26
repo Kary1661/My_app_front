@@ -21,9 +21,9 @@ const Favorites = () => {
             return (
               <div className={style.containerFav}>
                 <img src={character.image} alt={character.name} className={style.imageContainer} />
-                  <h2>Name: {character.name}</h2>
-                  <h2>Specie: {character.species}</h2>
-                  <h2>Gender: {character.gender}</h2>
+                  <h1>Name: {character.name}</h1>
+                  <h1>Specie: {character.species}</h1>
+                  <h1>Gender: {character.gender}</h1>
               </div>
             );
           })}

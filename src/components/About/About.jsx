@@ -4,9 +4,10 @@ import style from '../About/About.module.css'
 const About = () => {
     return(
         <div className={style.aboutContainer}>
-            <h1>Esta es la app de Kary</h1>
+            <h1>Hi everyone!!</h1>
             <br></br>
-            <h3>Cohorte: FT-35b</h3>
+            <h2>My name is Karina and I'm in "class 35b" of Henry's bootcamp. Born and raised in Argentina, now I'm learning in Henry's "full stack developer" and I'm very happy to be part of this community.
+            This is my first proyect so far and I hope you all enjoy it as much as I, when I made it. Thank you so much for seen my work here, have a wonderfull life!</h2>
         </div>
     )
 }
