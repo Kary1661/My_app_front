@@ -40,10 +40,29 @@
     transition: 1s;
     cursor: pointer;
 }
-/* .btnDelete{
-    margin: 5px;
-    display: inline-flex;
-    padding-right: 3%;
-    align-items: center;
+.btnOrder{
+    width: 150px;
+    height: 30px;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 10%;
     justify-content: center;
-} */
+    font-weight: bold;
+    color: rgb(210, 0, 94);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5px solid rgb(180, 0, 27);
+    box-shadow: 0 5px 2px #f58686;
+}
+.btnFilter{
+    width: 150px;
+    height: 30px;
+    margin-left: 4%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    justify-content: center;
+    font-weight: bold;
+    color: rgb(210, 0, 94);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5px solid rgb(180, 0, 27);
+    box-shadow: 0 5px 2px #f58686;
+}

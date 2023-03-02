@@ -2,40 +2,50 @@ import { ADD_FAVORITE, DELETE_FAVORITE, FILTER, ORDER } from "./action-types"
 
 const initialState = {
     myFavorites: [],
-    allCharacters: []
+    allCharacters: [],
+    allFavs: []
 }
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_FAVORITE:
+            const addFav = [...state.allCharacters, action.payload]
             return {
                 ...state,
-                myFavorites: [...state.allCharacters, action.payload],
-                allCharacters: [...state.myFavorites]
+                myFavorites: [...addFav],
+                allCharacters: [...addFav]
             }
         
         case DELETE_FAVORITE:
+            const deleteFav = state.allCharacters.filter(character => character.id !== action.payload);
             return {
             ...state,
-            myFavorites: state.myFavorites.filter(character => character.id!== action.payload)
+            myFavorites: [...deleteFav],
+            allCharacters: [...deleteFav]
             }
         
         case FILTER:
-            const { allCharacters } = state;
-            const allCharsFiltered = allCharacters.filter(character => character.gender === action.payload)
             return {
                 ...state,
-                myFavorites: allCharsFiltered
+                myFavorites: state.allCharacters.filter(character => character.gender === action.payload),
             }
 
         case ORDER:
+            let orderFav;
+            if (action.payload === "Ascendente") {
+                orderFav = state.myFavorites.sort((a, b) => a.id > b.id ? 1 : -1);
+            } else {
+                orderFav = state.myFavorites.sort((a, b) => a.id < b.id ? 1 : -1);
+            }
             return {
                 ...state,
-                myFavorites:
-                    action.payload === "Ascendente"
-                    ? allCharacters.sort((a, b) => a.id < b.id)
-                    : allCharacters.sort((a, b) => a.id > b.id)
-            }    
+                myFavorites: [...orderFav],
+            }
+        case 'RESET':
+            return{
+                ...state,
+                myFavorites: state.allCharacters
+            }  
                     
         default:
             return {...state}
