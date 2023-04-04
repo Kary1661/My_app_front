@@ -7,6 +7,9 @@ import Detail from "./components/Detail/Detail.jsx";
 import Form from "./components/Form/Form.jsx";
 import Favorites from "./components/Favorites/Favorites.jsx";
 
+
+
+
 function App() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -62,7 +65,6 @@ function App() {
         />
       
       </Routes>
-    
     </div>
   
   )
