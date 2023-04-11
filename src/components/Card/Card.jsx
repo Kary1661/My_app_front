@@ -36,6 +36,7 @@ function Card({ name, species, gender, image, onClose, detailId }) {
     <div className={style.cardContainer}>
         <img src={image} alt={name} className={style.imageContainer} />
         <h1 className={style.cardId}>Name: {name}</h1>
+        <br></br>
         <h1 className={style.cardId}>Specie: {species}</h1>
           <div>
             <button className={style.btnDelete} onClick={onClose}>Delete</button>

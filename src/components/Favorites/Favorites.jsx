@@ -25,8 +25,8 @@ const Favorites = () => {
       <div>
          <div>
             <select onChange={handleOrder} className={style.btnOrder}>
-              <option value="Ascendente">Ascendente</option>
-              <option value="Descendente">Descendente</option>
+              <option value="Ascendent">Ascendent</option>
+              <option value="Descendent">Descendent</option>
             </select>
             <select onChange={handleFilter} className={style.btnFilter}>
             <option value="Male">Male</option>
@@ -40,17 +40,19 @@ const Favorites = () => {
              Back to home
            </button>
          </div>
+        <div className={style.containerFav}>
         {
           myFavorites.map((character) => {
             return (
-              <div className={style.containerFav}>
-                <img src={character.image} alt={character.name} className={style.imageContainer} />
-                  <h1>Name: {character.name}</h1>
-                  <h1>Specie: {character.species}</h1>
-                  <h1>Gender: {character.gender}</h1>
-              </div>
+              <Favorites 
+                image={character.image}
+                Name={character.name}
+                Specie={character.species}
+                Gender={character.gender}
+              />
             );
           })}
+        </div>
       </div>
   );
               

@@ -32,7 +32,7 @@ const reducer = (state = initialState, action) => {
 
         case ORDER:
             let orderFav;
-            if (action.payload === "Ascendente") {
+            if (action.payload === "Ascendent") {
                 orderFav = state.myFavorites.sort((a, b) => a.id > b.id ? 1 : -1);
             } else {
                 orderFav = state.myFavorites.sort((a, b) => a.id < b.id ? 1 : -1);

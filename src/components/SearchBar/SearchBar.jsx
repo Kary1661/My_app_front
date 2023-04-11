@@ -19,9 +19,7 @@ function SearchBar({ onSearch }) {
       });
     }
   };
-
   
-
   return (
     <div>
       <input 

@@ -15,11 +15,11 @@ function Nav(props) {
       <button onClick={handleClick}/>
       <div className={style.containerNav}>
         <SearchBar onSearch={onSearch} />
-        <Link to="/home" className={style.btnHome}>Home</Link>
-        <Link to="/about" className={style.btnAb}>
+        <Link to="/home" className={style.btnNav}>Home</Link>
+        <Link to="/about" className={style.btnNav}>
           About
         </Link>
-        <Link to="/favorites" className={style.btnFav}>
+        <Link to="/favorites" className={style.btnNav}>
           Favorites
         </Link>
       </div>
