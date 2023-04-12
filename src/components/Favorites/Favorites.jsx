@@ -40,19 +40,19 @@ const Favorites = () => {
              Back to home
            </button>
          </div>
-        <div className={style.containerFav}>
+        <>
         {
           myFavorites.map((character) => {
             return (
-              <Favorites 
-                image={character.image}
-                Name={character.name}
-                Specie={character.species}
-                Gender={character.gender}
-              />
+        <div className={style.containerFav}>
+                <img src={character.image} className={style.image} />
+              <h1>Name: {character.name}</h1>
+                <h2>Specie: {character.species}</h2>
+                <h2>Gender: {character.gender}</h2>
+           </div>   
             );
           })}
-        </div>
+        </>
       </div>
   );
               

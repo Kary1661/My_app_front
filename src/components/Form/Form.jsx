@@ -30,32 +30,27 @@ export default function Form (props) {
     }
 
     return(
-        <>
-        <form onSubmit={handleSubmit}>
-            <div className={style.container}>
+        <form onSubmit={handleSubmit} className={style.container}>
+            <h1>Sign In</h1>
                 <label>Username:</label>
-                <input 
+                <input
+                    className={style.input}
                     name="username"
                     type="text"
                     value={userData.username}
                     onChange={handleInputChange}
                 />
                 <p style={{color: "red"}}>{errors.username}</p>
-            </div>
-            <div className={style.container}>
                 <label>Password:</label>
-                <input 
+                <input
+                    className={style.input}
                     name="password"
                     type="password" 
                     value={userData.password}
                     onChange={handleInputChange}
                 />
                 <p style={{color: "white"}}>{errors.password}</p>
-            </div>
-            <div className={style.container}>
-              <button>Login</button>
-            </div>
+              <button className={style.btnLog}>Login</button>
         </form>
-        </>
     )
 }
