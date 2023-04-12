@@ -41,11 +41,13 @@ function Detail() {
           alt={character.name}
           className={style.image}
         />
-        <h1 className={style.detailInfo}>{character.name}</h1>
-        <h2 className={style.detailInfo}>Status: {character.status}</h2>
-        <h2 className={style.detailInfo}>Species: {character.species}</h2>
-        <h2 className={style.detailInfo}>Gender: {character.gender}</h2>
-        <h2 className={style.detailInfo}>Origin: {character.origin?.name}</h2>
+        <div>
+        <h1>{character.name}</h1>
+        <h2>Status: {character.status}</h2>
+        <h2>Species: {character.species}</h2>
+        <h2>Gender: {character.gender}</h2>
+        <h2>Origin: {character.origin?.name}</h2>
+        </div>
       </div>
     </>
   );
