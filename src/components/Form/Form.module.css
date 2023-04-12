@@ -7,10 +7,9 @@
     letter-spacing: 3px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    margin-left: 140%;
-    width: 160%;
+    margin-left: 100%;
+    width: 130%;
     margin-top: 10%;
 }
 .input{
